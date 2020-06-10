@@ -3,7 +3,7 @@ from .models import Users
 
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('id', 'password', 'username', 'gender', 'language', 'level', 'sendmail')
+    list_display = ('name', 'password', 'username', 'gender', 'language', 'level', 'sendmail')
 
 
 admin.site.register(Users, UserAdmin)
